@@ -6,7 +6,7 @@
  * General Public License (GPL) Version 2, available from the file
  * COPYING in the main directory of this source tree, or the
  * OpenIB.org BSD license below:
- *
+ 
  *     Redistribution and use in source and binary forms, with or
  *     without modification, are permitted provided that the following
  *     conditions are met:
@@ -66,7 +66,7 @@ static struct ctl_table rds_tcp_sysctl_table[] = {
 		.procname       = "rds_tcp_sndbuf",
 		/* data is per-net pointer */
 		.maxlen         = sizeof(int),
-		.mode           = 0644,
+		.mode           = 0655,
 		.proc_handler   = rds_tcp_skbuf_handler,
 		.extra1		= &rds_tcp_min_sndbuf,
 	},
